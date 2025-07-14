@@ -9,11 +9,14 @@
     <style>
         .project-card {
             width: 300px;
-            height: 300px;
+            height: 340px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             overflow: hidden;
             border-radius: 10px;
             background-color: #2A004E;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .project-card:hover {
@@ -23,7 +26,7 @@
 
         .project-card img {
             width: 100%;
-            height: 70%;
+            height: 60%;
             object-fit: cover;
             display: block;
         }
@@ -31,11 +34,38 @@
         .project-info {
             padding: 1rem;
             color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+            align-items: center;
+            text-align: center;
         }
 
         .project-info h3 {
             margin-bottom: 0.5rem;
             color: #F14A00;
+        }
+
+        .project-info p {
+            flex-grow: 1;
+            color: #ccc;
+        }
+
+        .project-info .btn {
+            margin-top: 0.5rem;
+            background-color: #F14A00;
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border: none;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-info .btn:hover {
+            background-color: #C62300;
         }
 
         .project-grid {
@@ -51,7 +81,7 @@
 
     <!-- Navbar -->
     <header class="navbar">
-        <div class="logo">Alex Doe</div>
+        <div class="logo">Aniket Raghav</div>
         <div class="menu-toggle" id="menuToggle">&#9776;</div>
         <nav>
             <ul class="nav-links" id="navLinks">
@@ -66,8 +96,8 @@
     <!-- Home Section -->
     <section class="home-section" id="home">
         <div class="home-content">
-            <h1>Hi, I'm Alex Doe</h1>
-            <p>A passionate Front-End Developer based in Fictionland.</p>
+            <h1>Hi, I'm Aniket Raghav</h1>
+            <p>A passionate Class 12th student who loves to create the new ideas and share it with all.</p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
@@ -76,18 +106,19 @@
     <section class="about-section" id="about">
         <div class="about-container">
             <div class="about-profile-top">
-                <img src="website-pic.jpg" alt="Alex Doe Profile Picture" />
+                <img src="website-pic.jpg" alt="
+                Aniket Raghav Profile Picture" />
             </div>
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Hello, I'm Alex</h3>
+                    <h3>Hello, I'm Aniket Raghav</h3>
                     <p>I build elegant, efficient websites with HTML, CSS & JS. I enjoy designing web experiences that
                         are fast, responsive, and beautiful.</p>
                     <ul class="about-details">
-                        <li><strong>Location:</strong> DreamCity, Fictionland</li>
-                        <li><strong>Email:</strong> alexdoe@fictionweb.com</li>
-                        <li><strong>Experience:</strong> 3+ Years</li>
+                        <li><strong>Location:</strong> Bulandshahr , Uttar Pradesh</li>
+                        <li><strong>Email:</strong> aniketraghav101@gmail.com</li>
+                        <li><strong>Experience:</strong> Fresher </li>
                     </ul>
                 </div>
             </div>
@@ -100,19 +131,30 @@
             <h2>My Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/300.png?text=Project+1" alt="Project 1" />
+                    <img src="https://picsum.photos/300?random=1" alt="Project 1" />
                     <div class="project-info">
                         <h3>Portfolio Website</h3>
                         <p>Responsive personal website using HTML, CSS & JS.</p>
+                        <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="https://via.placeholder.com/300.png?text=Project+2" alt="Project 2" />
+                    <img src="https://picsum.photos/300?random=2" alt="Project 2" />
                     <div class="project-info">
                         <h3>Task App</h3>
                         <p>A to-do list app with local storage and sleek design.</p>
+                        <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
+            </div>
+            <div class="project-demo-video" style="margin-top: 2rem; text-align: center;">
+                <h3 style="color: white;">Watch Demo</h3>
+                <video width="100%"
+                    style="max-width: 600px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5); margin-top: 1rem;"
+                    controls>
+                    <source src="demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </section>
@@ -130,9 +172,11 @@
             <div class="social-box">
                 <h4>Connect with Me</h4>
                 <ul>
-                    <li><strong>Email:</strong> <a href="mailto:alexdoe@fictionweb.com">alexdoe@fictionweb.com</a></li>
+                    <li><strong>Email:</strong> <a href="aniketraghav101
+                        @gmail.com">aniketraghav101@gmail.com</a></li>
                     <li><strong>WhatsApp:</strong> <a href="https://wa.me/1234567890">+123 456 7890</a></li>
-                    <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alexdoe">linkedin.com/in/alexdoe</a>
+                    <li><strong>LinkedIn:</strong> <a
+                            href="https://linkedin.com/in/aniketraghav">linkedin.com/in/alexdoe</a>
                     </li>
                 </ul>
             </div>
